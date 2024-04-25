@@ -56,27 +56,39 @@ microservice-project/
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/microservice-project.git`
-2. Navigate to the project directory: `cd microservice-project`
+1. Clone the repository: `git clone https://github.com/saikrishnayadav764/microservice.git`
+2. Navigate to the project directory: `cd microservice`
 3. Install dependencies: `npm install`
-4. Configure environment variables: Create a `.env` file based on `.env.example`.
+4. Configure environment variables: Create a `.env` file.
 5. Start the server: `npm start`
 
 ## Usage
 
-Once the server is running, you can interact with the API endpoints using tools like Postman or curl.
+Once the server is running, you can interact with the API endpoints using Swagger `http://localhost:3000/api-docs`.
 
 ## API Endpoints
 
 The API endpoints are documented using Swagger UI. Access the documentation at `http://localhost:3000/api-docs`.
 
+- **User Authentication**:
+  - **POST /auth/register**: Register a new user account.
+  - **POST /auth/login**: Log in and receive a JWT token.
+
+- **Assignment Management**:
+  - **POST /assignments**: Create a new assignment.
+  - **GET /assignments**: Get all assignments.
+  - **GET /assignments/{id}**: Get a specific assignment by ID.
+  - **PUT /assignments/{id}**: Update an assignment by ID.
+  - **DELETE /assignments/{id}**: Delete an assignment by ID.
+  - **POST /assignments/{id}/submit**: Submit an assignment by ID (for students).
+  - **POST /assignments/{id}/grade**: Grade an assignment by ID (for teachers).
+  - **GET /assignments/students/{id}**: Get assignments for a specific student.
+  - **GET /assignments/teachers/{id}**: Get assignments created by a specific teacher.
+  - **GET /assignments/students/all**: Get all students' assignment submissions (accessible only to teachers).
+
 ## Authentication
 
 The API uses JWT token-based authentication. Users can obtain tokens by logging in or registering.
-
-## Testing
-
-The project includes unit tests for the controllers and services. Run tests using `npm test`.
 
 ## Technologies Used
 
@@ -88,4 +100,4 @@ The project includes unit tests for the controllers and services. Run tests usin
 
 ## Deployed API Link
 
-[Your Deployed API Link]
+[https://microservice-chl9.onrender.com/api-docs/]
