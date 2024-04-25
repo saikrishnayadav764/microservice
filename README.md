@@ -57,7 +57,7 @@ microservice-project/
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/saikrishnayadav764/microservice.git`
-2. Navigate to the project directory: `cd microservice`
+2. Navigate to the project directory: `cd microservice-main`
 3. Install dependencies: `npm install`
 4. Configure environment variables: Create a `.env` file.
 5. Start the server: `npm start`
