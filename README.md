@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This microservice project aims to provide a robust solution for managing assignments in an educational setting. It offers functionalities for creating, updating, and grading assignments, along with user authentication and authorization features.
+This microservice project aims to provide a reliable solution for managing assignments in an educational setting. It offers functionalities for creating, updating, and grading assignments, along with user authentication and authorization features.
 
 ## Features
 
